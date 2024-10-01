@@ -1,12 +1,16 @@
 <html>
+	<head>
+		<script src="spaceInvader.js" type="module"></script>
+		<link rel="stylesheet" type="text/css" href="styles/index.css" />
+	</head>
 
-<head>
-    <script src="spaceInvader.js" type="module"></script>
-    <link rel="stylesheet" type="text/css" href="styles/index.css" />
-</head>
-
-<body>
-    <canvas id="canvas"> </canvas>
-</body>
-
+	<body>
+		<canvas id="canvas"> </canvas>
+		<script>
+			let canvas = document.querySelector("canvas");
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
+			let context = canvas.getContext("2d");
+		</script>
+	</body>
 </html>
